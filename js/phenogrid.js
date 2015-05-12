@@ -102,7 +102,7 @@ function modelDataPointPrint(point) {
 		w : 0,
 		headerAreaHeight: 160,
 		comparisonTypes: [ { organism: "Homo sapiens", comparison: "diseases"}],
-		defaultComparisonType: { comparison: "genes"},
+		defaultComparisonType: { comparison: "OMIM"},
 		speciesLabels: [ { abbrev: "HP", label: "Human"},
 			{ abbrev: "MP", label: "Mouse"},
 			{ abbrev: "ZFIN", label: "Zebrafish"},
@@ -114,7 +114,7 @@ function modelDataPointPrint(point) {
 		labelCharDisplayCount : 20,
 		apiEntityMap: [ {prefix: "HP", apifragment: "disease"},
 			{prefix: "OMIM", apifragment: "disease"}],
-		defaultApiEntity: "gene",
+		defaultApiEntity: "OMIM",
 		tooltips: {},
 		widthOfSingleModel: 18,
 		heightOfSingleModel: 13,
@@ -136,7 +136,8 @@ function modelDataPointPrint(point) {
 		/// good - legit options
 		serverURL: "",
 		simServerURL: "",  // URL of the server for similarity searches
-		simSearchQuery: "/simsearch/phenotype?input_items=",
+		//simSearchQuery: "/simsearch/phenotype?input_items=",
+		simSearchQuery: "?outputSyntax=plain&input_items=",
 		selectedCalculation: 0,
 		invertAxis: false,
 		hpoDepth: 10,	// Numerical value that determines how far to go up the tree in relations.
