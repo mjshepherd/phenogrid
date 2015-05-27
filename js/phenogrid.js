@@ -3846,4 +3846,4 @@ function modelDataPointPrint(point) {
 	}
 
 	}); // end of widget code
-})(jQuery);
+})(jQuery.noConflict());
